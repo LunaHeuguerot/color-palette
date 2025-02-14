@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+body {
+    font-family: "Playwrite AU SA", serif;
+    background-color: #f5e3e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 252, 253, 0.9); 
+    border-radius: 2rem;
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    color: #6e4555; 
+}
+
+button {
+    font-family: "Playwrite AU SA", serif;
+    font-weight: 200;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 2rem;
+    background-color: #e1b8e7; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #e8b4bc; 
+}
+
+button:hover {
+    background-color: #feefcd; 
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.palette {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    font-weight: 100;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #3a3238;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.color-box:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.copy-btn {
+    position: absolute;
+    background: rgba(255, 241, 241, 0.24);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.color-box .copy-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-box:hover .copy-btn {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+    color: #3a3238;
+}
