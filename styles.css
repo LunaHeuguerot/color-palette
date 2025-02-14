@@ -84,3 +84,48 @@ button:hover {
     transform: translate(-50%, -50%) scale(1.1);
     color: #3a3238;
 }
+
+@media (max-width: 1165px) {
+    .container {
+        width: 80%; 
+        height: auto; 
+    }
+
+    button {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+
+    .color-box {
+        width: 80px; 
+        height: 80px; 
+        overflow: hidden;
+        font-size: small;
+    }
+}
+
+@media (max-width: 730px) {
+    body {
+        flex-direction: column; 
+        justify-content: flex-start; 
+        padding: 20px; 
+    }
+
+    .container {
+        width: 100%; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    button {
+        font-size: 12px; 
+        padding: 6px 12px;
+    }
+
+    .color-box {
+        width: 70px;
+        height: 70px; 
+        overflow: hidden;
+        font-size: x-small;
+    }
+}
