@@ -87,8 +87,8 @@ button:hover {
 
 @media (max-width: 1165px) {
     .container {
-        width: 80%; 
-        height: auto; 
+        width: 85%; 
+        height: 85%; 
     }
 
     button {
@@ -109,11 +109,12 @@ button:hover {
         flex-direction: column; 
         justify-content: flex-start; 
         padding: 20px; 
+        font-size: smaller;
     }
 
     .container {
-        width: 100%; 
-        height: auto; 
+        width: 85%; 
+        height: fit-content; 
         padding: 20px; 
     }
 
